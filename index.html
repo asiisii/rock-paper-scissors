@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock Paper Scissors</title>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main>
+      <section class="left-side">
+        <img class="human-avatar" src="weapons/human.png" alt="human avatar" >
+        <h1 class ="player" id="player">Ashish</h1>
+        <hr class="divider">
+        <h1 class="wins">Wins</h1>
+        <h1 class="score" id="playerScore">0</h1>
+        <div class="weapons">
+          <p>SELECT YOUR WEAPON</p>
+          <img id= "1" src="weapons/rock.png" alt="rock image" >
+          <img id= "2" src="weapons/paper.png" alt="paper image" >
+          <img id= "3" src="weapons/scissors.png" alt="sciessors image" >
+        </div>
+      </section>
+      <section class="battle-ground">
+        <div class="info" id="info">
+          <h1 class="rules-title">Rules</h1>
+          <h2 class="rules">Rock wins against Scissors</h2>
+          <h2 class="rules">Scissors wins against Paper</h2>
+          <h2 class="rules">Paper wins against Rock</h2>
+        </div>
+        <h1 class="game-title">Rock Paper Scissors</h1>
+        <h2>Human vs Robot</h2>
+        <h2 class="turn" id="turn">Ashish's Turn!</h2>
+        <div class="fight">
+          <div class="human-choice">
+              <img class="human" src="weapons/rock.png" alt="rock image" >
+          </div>
+          <div class="computer-choice">
+              <img class="computer" src="weapons/rock.png" alt="rock image" >
+          </div>
+        </div>
+
+      </section>
+      <section class="right-side">
+        <img class="robot" src="weapons/robot.png" alt="human avatar" >
+        <h1 class ="player" id="player">Robot</h1>
+        <hr class="divider">
+        <h1 class="wins">Wins</h1>
+        <h1 class="score" id="playerScore">0</h1>
+        <div class="weapons">
+          <p>AUTO SELECTS</p>
+          <img id= "4" src="weapons/rock.png" alt="rock image" >
+          <img id= "5" src="weapons/paper.png" alt="paper image" >
+          <img id= "6" src="weapons/scissors.png" alt="sciessors image" >
+        </div>
+      </section>
+    </main>
+    <script src="player.js"></script>
+    <script src="game.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
