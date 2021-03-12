@@ -1,0 +1,21 @@
+.zero {
+  background: red;
+  height: 100px;
+}
+.one {
+  background: blue;
+  height: 100px;
+}
+.two {
+  background: purple;
+  height: 100px;
+}
+
+.announcement, .weapon {
+  font-size: 5rem;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
