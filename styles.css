@@ -1,8 +1,182 @@
-/* .announcement, .weapon {
-  font-size: 5rem;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-img {
+body,
+main {
+  height: 90vh;
+  background: linear-gradient(60deg, #b57e5e, #c4b082, #7ab9c2, #4d8282);
+  background-size: 200% 200%;
+  animation: gradient 4s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+main {
+  margin: 0.5%;
+  background: linear-gradient(60deg, #71c9b9, #baaa6a);
+  background-size: 200% 200%;
+  border-radius: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.battle-ground {
+  height: 40%;
+  border-top: 3px double transparent;
+  border-radius: 2rem;
+}
+.title {
+  margin-top: 1%;
+  text-align: center;
+  text-shadow: 1px 1px 2px #d16992, 0 0 10px white, 0 0 5px #d16992;
+  color: white;
+}
+span {
+  font-style: italic;
+  text-shadow: 1px 1px 2px #d16992, 0 0 10px white, 0 0 5px #d16992;
+  color: orange;
+  text-transform: lowercase;
+}
+.announcement {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 3rem;
+  text-shadow: 1px 1px 2px #d16992, 0 0 10px white, 0 0 5px #d16992;
+  color: gray;
+}
+
+.ground {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weapon {
   width: 150px;
+}
+.players {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+}
+.human {
+  justify-content: flex-start;
+  display: flex;
+}
+
+.robot {
+  justify-content: flex-end;
+  display: flex;
+}
+
+
+.human,
+.robot {
+  height: 100%;
+  width: 45%;
+}
+
+.human-avatar,
+.robot-avatar {
+  height: 50%;
+  margin: 3%;
+  animation: fadeIn ease 5s;
+}
+
+.vs {
+  text-align: center;
+  font-size: 9rem;
+  text-shadow: 1px 1px 2px white, 0 0 10px blue, 0 0 5px darkblue;
+  margin-left: 2%;
+  /* margin-right: 2%; */
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+.human > .human-avatar,
+.robot > .robot-avatar {
+  height: 50%;
+}
+
+.robo-weapon-list > img,
+.my-weapon-list > img {
+  height: 100px;
+  width: 100px;
+  padding-bottom: 20px;
+}
+.robo-weapon-list > img {
+  pointer-events: none;
+}
+
+.my-weapon-list > img:hover{
+  transform: scale(1.1);
+}
+
+.mini-weapon {
   height: 150px;
-} */
+}
+
+/* score */
+.score {
+  width: 100%;
+  height: 100%;
+  margin-top: 5%;
+  text-align: center;
+}
+.human-points,
+.robot-points {
+  margin-top: 5%;
+  font-size: 6rem;
+  text-shadow: 1px 1px 2px white, 0 0 20px white, 0 0 15px lightblue;
+  color: #a88532;
+}
+
+.wins {
+  margin-top: 15%;
+  font-size: 4rem;
+  text-shadow: 1px 1px 2px #d16992, 0 0 10px white, 0 0 5px #d16992;
+  color: gray;
+}
+
+.reset {
+  font-size: 2rem;
+  font-style: italic;
+  height: 40%;
+  width: 8%;
+  margin-top: 5%;
+  text-shadow: text-shadow: 1px 1px 2px white, 0 0 10px blue, 0 0 5px darkblue;
+  color: black;
+  background-color: orange;
+}
+
+.reset:hover {
+  color:white;
+  background-color: blue;
+}
+
+.name {
+  font-size: 2rem;
+  text-shadow: 1px 1px 2px purple, 0 0 10px white, 0 0 55px red;
+}

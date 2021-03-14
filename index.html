@@ -8,22 +8,51 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <!-- <img id="0" src="imgs/rock.png" alt="rock pic"></div>
-    <img id="1" src="imgs/paper.png" alt="rock pic"></div>
-    <img id="2"src="imgs/scissors.png" alt="rock pic"></div>
-    <div id="roboWeapon"></div>
-    <div id="yourWeapon"></div>
-    <div class="announcement" id="announcement"></div> -->
-
+    <h1 class="title">ROCK - <span>PAPER</span> - SCISSORS</h1>
     <main>
-      <section class="left box">
-        
+      <section class="battle-ground">
+        <h1 class="announcement" id="announcement">SELECT YOUR WEAPON</h1>
+        <div class="ground" id="board"><h1 class="name">YOU</h1>
+            <img class="human-avatar" src="imgs/human.png" alt="human pic">
+            <div class="weapon" id="yourWeapon1"></div>
+            <h2 class="vs">VS</h2>
+            <div class="weapon" id="roboWeapon1"></div>
+            <img class="robot-avatar" src="imgs/robot.png" alt="robot pic"><h1 class="name">ROBOT</h1>
+        </div>
       </section>
-      <section class="mid box"></section>
-      <section class="right box"></section>
+      <hr class="divider">
+      <section class="players">
+        <div class="human" id="human">
+          <img class="human-avatar" src="imgs/human.png" alt="human pic">
+          <div class="my-weapon-list" >
+            <img id="0" class="weapon rock disabling" src="imgs/rock.png" alt="rock pic">
+            <img id="1" class="weapon paper disabling"src="imgs/paper.png" alt="paper pic">
+            <img id="2" class="weapon scissors disabling" src="imgs/scissors.png" alt="scissors pic">
+          </div>
+          <div class="score">
+            <h1 class="human-points" id="humanPoints"></h1>
+            <h1 class="wins">WINS</h1>
+          </div>
+        </div>
+        <hr class="divider2">
+        <button class="reset" id="restart">Restart The Game</button>
+        <hr class="divider2">
+        <div class="robot" id="robot">
+          <div class="score">
+            <h1 class="robot-points" id="robotPoints"></h1>
+            <h1 class="wins">WINS</h1>
+          </div>
+          <div class="robo-weapon-list"  >
+            <img class="weapon rock" src="imgs/rock.png" alt="rock pic">
+            <img class="weapon paper" src="imgs/paper.png" alt="paper pic">
+            <img class="weapon scissors" src="imgs/scissors.png" alt="scissors pic">
+          </div>
+          <img class="robot-avatar" src="imgs/robot.png" alt="robot pic">
+        </div>
+
+      </section>
+
     </main>
-
-
 
     <script src="player.js" charset="utf-8"></script>
     <script src="game.js" charset="utf-8"></script>

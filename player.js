@@ -1,7 +1,7 @@
 class Player {
   constructor(name) {
     this.name = name;
-    this.wins = 0;
+    this.wins = this.retreiveFromLocalStorage().wins ||0;
   }
 
   countWins() {
